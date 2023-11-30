@@ -9,6 +9,7 @@ DROP SEQUENCE IF EXISTS books_id_seq;
 
 -- Then, we recreate them
 CREATE SEQUENCE IF NOT EXISTS books_id_seq;
+
 CREATE TABLE books (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255),

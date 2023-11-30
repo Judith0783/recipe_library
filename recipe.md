@@ -58,8 +58,7 @@ rating: int
 -- Replace the table name, columm names and types.
 
 CREATE TABLE recipes (
-  id SERIAL PRIMARY KEY,
-recipe: text
+    id SERIAL PRIMARY KEY,
 cooking_time: int
 rating: int
 );
