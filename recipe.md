@@ -21,7 +21,7 @@ I'd like to give a rating to each of the recipes (from 1 to 5).
 
 Nouns:
 
-recipes, cooking time, rating
+recipes, name, cooking time, rating
 
 
 ##  2. Infer the Table Name and Columns
@@ -29,7 +29,7 @@ Put the different nouns in this table. Replace the example with your own nouns.
 
 Record | Properties
 -------|------------
-recipes | cooking time, rating
+recipes | recipe_name, cooking time, rating
 
 Name of the table (always plural): 'albums'
 
@@ -46,8 +46,8 @@ Remember to always have the primary key id as a first column. Its type will alwa
 # EXAMPLE:
 
 id: SERIAL
-recipe: text
-cooking_time: int
+recipe_name: text
+cooking_time: text
 rating: int
 
 
@@ -59,7 +59,8 @@ rating: int
 
 CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
-cooking_time: int
+recipe_name text
+cooking_time: text
 rating: int
 );
 ##  5. Create the table
