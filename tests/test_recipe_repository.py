@@ -11,11 +11,11 @@ def test_get_all_recipes(db_connection):
     recipes = repository.all()
     
     assert recipes == [
-        Recipe(1, 'Blueberry Muffins', "20 minutes", 3),
-        Recipe(2, 'Carrot Soup', "30 minutes", 2),
-        Recipe(3, 'Mashed Cauliflower', "15 minutes", 2),
-        Recipe(4, 'Cheese Cake', "45 minutes", 4),
-        Recipe(5, 'Mushroom Stroganoff', "30 minutes", 5),
-        Recipe(6, 'Green Chutney', "35 minutes", 1)
+        Recipe(1, 'Blueberry Muffins', 20, 3),
+        Recipe(2, 'Carrot Soup', 30, 2),
+        Recipe(3, 'Mashed Cauliflower', 15, 2),
+        Recipe(4, 'Cheese Cake', 45, 4),
+        Recipe(5, 'Mushroom Stroganoff', 30, 5),
+        Recipe(6, 'Green Chutney', 35, 1)
     ]
 

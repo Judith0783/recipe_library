@@ -47,7 +47,7 @@ Remember to always have the primary key id as a first column. Its type will alwa
 
 id: SERIAL
 recipe_name: text
-cooking_time: text
+cooking_time: int
 rating: int
 
 
@@ -59,8 +59,8 @@ rating: int
 
 CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
-recipe_name text
-cooking_time: text
+recipe_name text,
+cooking_time int,
 rating: int
 );
 ##  5. Create the table

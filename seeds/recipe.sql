@@ -13,15 +13,15 @@ CREATE SEQUENCE IF NOT EXISTS recipes_id_seq;
 CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
 recipe_name text,
-cooking_time text,
+cooking_time int,
 rating int
 );
 
 -- Finally, we add any records that are needed for the tests to run
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Blueberry Muffins', '20 minutes', 3);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Carrot Soup', '30 minutes', 2);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Mashed Cauliflower', '15 minutes', 2);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Cheese Cake', '45 minutes', 4);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Mushroom Stroganoff', '30 minutes', 5);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Green Chutney', '35 minutes', 1);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Blueberry Muffins', 20, 3);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Carrot Soup', 30, 2);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Mashed Cauliflower', 15, 2);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Cheese Cake', 45, 4);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Mushroom Stroganoff', 30, 5);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('Green Chutney', 35, 1);
 
